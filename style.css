@@ -1,0 +1,602 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: aliceblue;
+}
+header{
+    background-color: rgb(55, 97, 61);
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1000;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logo{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-image: cover;
+  
+}
+.top-logo{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    color:rgb(222, 219, 219);
+    padding: 10px;
+    
+}
+h4{
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:30px;
+}
+span{
+    color: rgb(233, 109, 7);
+}
+.navlink.active{
+    display: flex;
+}
+.navlink{
+    display: flex;
+    align-items: center;
+    gap:20px;
+     text-decoration: none;
+    list-style: none;
+    color:beige;
+   font-weight: bold;
+   margin-right: 10px;
+
+}
+.navlink a{
+    color:rgb(222, 219, 219); 
+     text-decoration: none;
+    list-style: none;
+}
+.navlink a:hover{
+    color: rgb(233, 109, 7);
+ }
+.menu{
+    display: none;
+    font-size: 20px;
+    cursor: pointer; 
+    color:beige;
+    border: 2px solid whitesmoke;
+
+}
+/* nav completed */
+
+#hero{
+    background-image: url(https://wallpaperaccess.com/full/31213.jpg);
+    height: 100vh;
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+.hero::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1;
+}
+.hc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height:1 ;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+
+   }
+    
+
+.home-btn{
+    padding: 10px;
+    border:5px solid rgb(251, 246, 246);
+    background-color:  #2a7a5e;
+color: aliceblue;
+border-radius: 20px;
+text-decoration: none;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-weight: bold;
+} 
+.home-btn:hover{
+    background-color: rgb(188, 56, 8);
+    text-decoration: double;
+    transform: scale(1.05);
+    transition:0.3s;
+}
+    
+.lead{
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+h1{
+  margin-top: 20%;
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:70px;
+}
+
+/* baner section completed */
+#feature{
+    text-align: center;
+    color: rgb(25, 67, 25);
+      background-color: aliceblue;
+      width: 100%;
+    
+}
+.h2{
+    margin-top: 10px;
+    color: rgb(255, 85, 0);
+    font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40px;
+     
+}
+p{  margin-bottom: 10px;
+    font-weight: bold;
+    font-size: larger;
+
+}
+.boxs{
+    display: flex;
+   justify-content:space-around;
+align-items: center;
+gap:10px;
+}
+.boxs p{
+    font-style: italic;
+}
+.boxs h3{
+ color:rgb(165, 46, 3);
+ text-decoration:underline;
+}
+
+.card1, .card2 ,.card3{
+    background-color:rgb(42, 101, 42);
+    height: 360px;
+    width: 310px;
+    border: 3px solid rgb(29, 62, 29);
+    border-radius: 10px;
+    color:whitesmoke;
+    transition:0.3s;
+    /* margin-top:7%; */
+}
+ .card3:hover{
+    transform:translateX(10px);
+}
+.card1{
+    transition: 0.3s;
+}
+.card1:hover{
+     transform:translateX(10px);    
+}
+.card2{
+     transition: 0.3s;
+}
+.card2:hover{
+     transform:translateX(10px);
+}
+
+
+.pic{
+   width: 100%;
+   height: 70%; 
+}
+/* faeture completed */
+
+#Tour{
+
+    margin-top: 0;
+    text-align: center;
+      background-color: aliceblue;
+      width: 100%;
+}
+#Tour h2{
+
+    color: rgb(255, 85, 0);
+    font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40px;
+  margin: 10px;
+}
+.contain{
+    display: flex;
+    gap:10px;
+    justify-content: space-evenly
+
+}
+.trip{
+    height:475px;
+    width: 350px;
+    background-color:white;
+    color: rgb(19, 70, 19);
+
+}
+.trip h3 ,h5{
+    font-weight: bold;
+    color: rgb(255, 102, 0);
+}
+h5{
+    font-size: 18px;
+    display: inline;
+    border-radius: 5px;
+    background-color:skyblue;
+    padding: 5px;
+    color: white;
+
+}
+h5:hover{
+    background-color: gray;
+}
+button{
+    margin:10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #2a7a5e;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+
+}
+button:hover{
+    background-color: rgb(187, 72, 72);
+
+}
+
+.trip img{
+    height:60%;
+    width: 90%;
+    margin: 10px;
+    object-fit: cover;
+}
+.trip img:hover{
+    transform: scale(1.1);
+}
+/* tour completed */
+#Achievements{
+    text-align: center;
+    background-color: aliceblue;
+    color: rgb(36, 70, 36);
+    padding: 60px 20px;
+    width: 100%;
+}
+#Achievements h2{
+    color: rgb(255, 85, 0);
+    font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40px;
+  margin: 10px;
+}
+#Achievements p{
+    margin-bottom: 40px;
+}
+
+.travel{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+}
+.tb{
+    background-color:white;
+    padding: 50px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+
+}
+.tb:hover{
+transform: translateY(-10px);
+}
+.tb h3{
+    font-size: 36px;
+    color:#0077ff;
+    margin-bottom: 10px;
+}
+.tb p{
+    font-weight: bold;
+    margin-top:10%;
+
+}
+.tb h6{
+font-size:40px;
+color: rgb(255, 102, 0);
+}
+/* achievements completed */
+#Gallary{
+    padding: 60px 20px;
+    text-align: center;
+}
+#Gallary h2{
+      color: rgb(255, 85, 0);
+    font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40px;
+  margin-bottom: 5px;
+  
+}
+.gc{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+}
+.item{
+    overflow: hidden;
+    border-radius: 10px;
+}
+.time img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.4s;
+}
+/* gallary completed */
+#contact{
+    padding: 60px 10%;
+    text-align: center;
+}
+#contact h2{
+     color: rgb(255, 85, 0);
+    font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:40px;
+  margin-bottom: 5px;
+  
+}
+.para{
+    margin-bottom: 30px;
+    color:rgb(24, 68, 24);
+    font-weight: bolder;
+}
+.cc{
+    display: flex;
+    justify-content: space-between;
+    gap:40px;
+    flex-wrap: wrap;
+}
+.cont-info{
+    flex: 1;
+    text-align: left;
+    font-size: 18px;
+    line-height: 2;
+    color: #0077ff;
+    
+}
+
+
+.form{
+flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    justify-content: center;
+
+}
+.form input,.form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+.form textarea{
+    height: 120px;
+    resize: none;
+}
+.form button{
+    padding: 12px;
+    background-color: #2a7a5e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    margin-left: 33%;
+
+}
+.form button:hover{
+    background-color: #1e5c45;
+}
+
+
+
+
+.footer{
+background:rgb(55, 97, 61);
+color:white;
+padding:10px 10px;
+}
+
+.footer-container{
+display:flex;
+justify-content:space-evenly;
+padding: 10px;
+flex-wrap:wrap;
+}
+
+.footer h3{
+margin-bottom:15px;
+font-size: 25px;
+color: rgb(190, 187, 6)
+}
+
+
+.footer-social a{
+color:white;
+font-size:24px;
+margin-right:10px;
+}
+.footer-social a:hover{
+    color: navy;
+}
+.footer-about h3{
+    text-align: center;
+}
+.footer-about p{
+line-height: 1.6;
+}
+.footer-social h3{
+    text-align: center;
+}
+
+.footer-bottom{
+text-align:center;
+margin-top:30px;
+border-top:1px solid #555;
+padding-top:15px;
+}
+
+
+
+
+
+
+
+
+/* tablet */
+@media ( max-width: 900px) {
+   .hc h1{
+font-size: 40px;
+
+   } 
+   .hc p{
+    font-size: 18px;
+    padding: 10px;
+
+   }
+   .boxs{
+    flex-wrap: wrap;
+   }
+.contain{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.travel{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.gc{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+}
+.form button{
+    margin-left: 20%;
+}
+
+}
+
+
+
+
+
+
+
+
+/* mobile */
+
+@media(max-width:500px){
+       .navlink{
+        color:beige;
+        display: none;
+        flex-direction: column;
+        position:absolute;
+        top:85px;
+        background-color:rgb(222, 219, 219);
+        width:100%;
+        font-weight: bolder;
+        gap:5px;
+    
+    }
+    .l1{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        background-color: rgb(121, 225, 121);
+        border-radius: 5px;
+    }
+    .menu{
+        display: block;
+        margin-right: 20px;
+        
+    }
+    .menu:hover{
+        color: rgb(221, 84, 34);
+
+
+    }
+    /* hero */
+
+   #hero{
+    height: 80vh;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1772339014113-29414e7295b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDYxfEZ6bzN6dU9ITjZ3fHxlbnwwfHx8fHw%3D);
+    background-size:cover;
+   
+
+   }
+   .hc{
+    margin-top: 10%;
+   font-size: 20px;
+
+   }
+   /* feature section */
+   .boxs{
+    flex-direction: column;
+   }
+    .boxs p{
+        font-size: small;
+    }
+   .card1,.card2,.card3{
+    width:90%;
+    height: 350px;
+   }
+   /* tour */
+   .contain{
+    flex-direction: column;
+
+   }
+   .travel{
+    flex-wrap: wrap;
+    align-items: center;
+}
+.gc{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+}
+.form button{
+    margin-left: 15%;
+}
+
+
+
+}
